@@ -2,7 +2,7 @@ import Header from './Header/Header.jsx'
 import Main from './Main/Main.jsx';
 import Footer from './Footer/Footer.jsx';
 import PopupWithForm from './PopupWithForm/PopupWithForm.jsx';
-import PopupImage from './PopupImage/PopupImage.jsx';
+import ImagePopup from './ImagePopup/ImagePopup.jsx';
 import { useState } from 'react';
 
 function App() {
@@ -141,7 +141,7 @@ function App() {
         buttonTitle='Да'
       />
 
-      <PopupImage
+      <ImagePopup
         card={selectedCard}
         isOpen={isImagePopup}
         onClose={closeAllPopups}
