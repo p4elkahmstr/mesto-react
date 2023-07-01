@@ -1,0 +1,10 @@
+.popup__submit_valid {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.popup__submit_valid:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
