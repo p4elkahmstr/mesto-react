@@ -14,7 +14,8 @@ class Api {
             headers: {
                 authorization: this._authorization,
             },
-        }).then(this._checkResponse);
+        }).then(this._checkResponse)
+        .catch((err) => console.log(err));
     }
 
     getCards() {
@@ -22,7 +23,8 @@ class Api {
             headers: {
                 authorization: this._authorization,
             },
-        }).then(this._checkResponse);
+        }).then(this._checkResponse)
+        .catch((err) => console.log(err));
     }
 
     setUserInfo(data) {
@@ -34,7 +36,8 @@ class Api {
                 about: data.description,
                 // avatar: data.avatar,
             }),
-        }).then(this._checkResponse);
+        }).then(this._checkResponse)
+        .catch((err) => console.log(err));
     }
 
     setNewAvatar(data) {
@@ -44,7 +47,8 @@ class Api {
             body: JSON.stringify({
                 avatar: data.avatar,
             }),
-        }).then(this._checkResponse);
+        }).then(this._checkResponse)
+        .catch((err) => console.log(err));
     }
 
     addCard(data) {
@@ -55,7 +59,8 @@ class Api {
                 name: data.title,
                 link: data.link,
             }),
-        }).then(this._checkResponse);
+        }).then(this._checkResponse)
+        .catch((err) => console.log(err));
     }
 
     addLike(dataId) {
@@ -64,7 +69,8 @@ class Api {
             headers: {
                 authorization: this._authorization,
             },
-        }).then(this._checkResponse);
+        }).then(this._checkResponse)
+        .catch((err) => console.log(err));
     }
 
     deleteLike(dataId) {
@@ -73,7 +79,8 @@ class Api {
             headers: {
                 authorization: this._authorization,
             },
-        }).then(this._checkResponse);
+        }).then(this._checkResponse)
+        .catch((err) => console.log(err));
     }
 
     deleteCard(cardId) {
@@ -82,7 +89,10 @@ class Api {
             headers: {
                 authorization: this._authorization,
             },
-        }).then(this._checkResponse);
+        })
+        .then(this._checkResponse)
+        .catch((err) => console.log(err));
+        
     }
 }
 
