@@ -34,7 +34,6 @@ class Api {
             body: JSON.stringify({
                 name: data.username,
                 about: data.description,
-                // avatar: data.avatar,
             }),
         }).then(this._checkResponse)
         .catch((err) => console.log(err));
